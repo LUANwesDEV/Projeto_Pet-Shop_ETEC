@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="js/script.js">
-    <title>Pet - shop</title>
+    <title>Pet - Shop</title>
 
-    <script>
-        function enviar(){
-            alert ("Enviado com sucesso!")
-        }
-        
-    </script>
+    
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <h1 title="mary & gaby petshop">
         <img
           src="img/logo-mari-e-gabi-petshop.svg"
@@ -24,8 +19,8 @@
         />
       </h1>
     </header>
-    <nav>
-      <ul>
+    <nav id="nav">
+      <ul id="menu">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#produto">Produtos</a></li>
         <li><a href="#servico">Serviços</a></li>
@@ -33,7 +28,7 @@
       </ul>
     </nav>
     <section class="fundo-verde" id="sobre">
-      <div class="container flex-container">
+      <div class="container flex-container ">
         <div class="col">
           <h2>Sobre nós</h2>
           <p>
@@ -70,12 +65,14 @@
           <figure>
             <img src="img/produto-1.jpg" alt="img produto-1" />
           </figure>
+          
           <h3>Produto 1</h3>
           <p>R$ 150,00</p>
           <a href="#" class="btn-pata">
             <img src="img/patinha-preta.png" alt="patinha-preta" />
             Comprar
           </a>
+          
         </section>
 
         <section class="produto">
@@ -83,7 +80,7 @@
             <img src="img/produto-2.jpg" alt="img produto-2" />
           </figure>
           <h3>Produto 2</h3>
-          <p>R$ 150,00</p>
+          <p>R$ 380,00</p>
           <a href="#" class="btn-pata">
             <img src="img/patinha-preta.png" alt="patinha-preta" />
             Comprar
@@ -95,7 +92,7 @@
             <img src="img/produto-3.jpg" alt="img produto-3" />
           </figure>
           <h3>Produto 3</h3>
-          <p>R$ 150,00</p>
+          <p>R$ 70,00</p>
           <a href="#" class="btn-pata" onclick="comprar()">
             <img src="img/patinha-preta.png" alt="patinha-preta" />
             Comprar
@@ -188,5 +185,8 @@
             <p class="texto-centralizado"> Copyright ©2022 Mary e Gabi | Todos os direitos reservados</p> <!--Alt 0169 -simbolo de copyright-->
         </div>
     </footer> 
+    <script type="text/javascript" src="js/script.js">
+       
+    </script>
 </body>
 </html>
