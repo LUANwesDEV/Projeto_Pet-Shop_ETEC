@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 header{
@@ -33,6 +33,7 @@ margin-right: 10px;
 nav a {
     color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover{
@@ -53,7 +54,6 @@ nav a:hover{
 
 .container{
     max-width: 900px;
-    min-width: 150px;
     margin: 0 auto;
     padding: 56px 0;
 }
@@ -62,10 +62,15 @@ nav a:hover{
     width: 430px;
 }
 
+div .col .img1{
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
+    
+}
 div .col img{
     border-radius: 10px;
     padding: 3px;
-    
 }
 
 .flex-container {
@@ -114,8 +119,17 @@ flex-wrap: wrap;
     cursor: pointer;
     margin-top: 10px;
 }
+.btn-pata:hover{
+    background-color: #6dd432;
+    transition: 0.6s;
+}
+.btn-form:hover{
+    background-color: #6dd432;
+    transition: 0.6s;
+}
 iframe{
     border-radius: 1rem;
+    width: 100%;
 }
 
 input{
@@ -133,11 +147,12 @@ textarea{
     padding: 5px;
 }
 
-button{
+.btn-form{
     width: 90px;
     height: 27px;
-    background-color:#91e467;
+    background-color:#d3fbbd;
     border-radius: 5px;
+    border: 1px solid rgb(145, 144, 144);
 }
 .linha{
     margin: auto ;
@@ -148,6 +163,10 @@ button{
 footer{
     margin: 20px;
 }
+#btn-mobile{
+    display: none;
+}
+
 
 @media (max-width:980px){
     .container {
@@ -163,10 +182,12 @@ footer{
         width: 100%;
         
     }
-    div .col img{
+    div .col .img1{
         padding: 0;
         margin: 2px;
         border-radius: 10px;
+        width: 400px;
+        
     }
     .produto {
         width: 100%;
@@ -187,12 +208,84 @@ footer{
     iframe{
         width: 100%;
     }
-}   
+} 
+ 
 @media (max-width:480px){
+    /* Menu Mobile*/
+    header{
+        background: none;
+        background-color: #ffff;
+        border-bottom: 1px solid #c3c3c3;
+        border-radius: 10px;
+    } 
+    header h1 img{
+        padding: 12px;
+        max-height: 60px;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: cente;
+        
+        
+        
+    }
     #header{
         display: flex;
+        align-items: center;
+        height: 70px;
+        padding: 1rem;
+        justify-content: space-between;
+        
+        
     }
-
+    #btn-mobile{
+        display: block;
+        background-color: #bdff9c;
+        padding: .5rem ;
+        border-radius: 3px;
+        border: 1px solid rgb(145, 144, 144);
+        width: 3.5rem;
+        cursor: pointer;
+        
+    }
+    #btn-mobile:hover{
+        background-color: #6dd432;
+        transition: 0.6s;
+    }
+    #menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        right: 0;
+        background: #ffff;
+        border-radius: 10px;
+        border-bottom: 1px solid #c3c3c3;
+        padding: 10px;
+        z-index: 1000; /*Só vai garantir se caso tiver outros elementos a baixo que fique por cima dele*/
+    }
+    /* Quando o botão esta clicado, entra nessa função js, para mostrar o menu*/
+    #nav.active #menu{
+        display: flex;
+        flex-direction: column; 
+        height: 40vh;
+    }
+    nav li{
+        background: none;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid #c3c3c3;
+        font-weight: bold; 
+    }
+    nav a:hover{
+        color:  #6dd432;
+    }    
+    /* Menu Mobile*/
+    div .col .img1{
+        max-width: 100%;
+        padding: 0;
+        margin: 2px;
+    }
     .container {
         margin: 1rem auto;
         padding: 10px 0;
@@ -203,34 +296,26 @@ footer{
         margin: 1rem;
         padding: 0;
         width: 100%;
+        display: block;
         
     }
     
-    div .col img{
-        width: 100%;
-        padding: 0;
-        margin: 2px;
-    }
-
-    .produto {
+    .produto{
         width: 100%;
         margin: 1rem;
+    } 
+    /*Assim que passa o mouse os botões tem uma cor diferente*/  
+    .btn-pata:hover{
+        background-color: #6dd432;
+        transition: 0.6s;
     }
-    
-    .btn-pata{
-        border: 1px solid #91e467;
-        background-color: #d3fbbd;
-        display: inline-block;
-        padding: 5px 0 10px;
-        text-decoration: none;
-        color: #000;
-        border-radius: 5px;
-        cursor: pointer;
+    .btn-form:hover{
+        background-color: #6dd432;
+        transition: 0.6s;
+    }
+    iframe{
         width: 100%;
-        
-    
     }
-    
 }
 
 

@@ -12,21 +12,25 @@
 
   <body>
     <header id="header">
-      <h1 title="mary & gaby petshop">
-        <img
-          src="img/logo-mari-e-gabi-petshop.svg"
-          alt="logo-mari-e-gabi-petshop"
-        />
-      </h1>
-    </header>
-    <nav id="nav">
-      <ul id="menu">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#produto">Produtos</a></li>
-        <li><a href="#servico">Serviços</a></li>
-        <li id="itemcontato"><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+        <h1 title="mary & gaby petshop">
+          <img
+            src="img/logo-mari-e-gabi-petshop.svg"
+            alt="logo-mari-e-gabi-petshop"
+          />
+        </h1>
+        <nav id="nav">
+          <button id="btn-mobile">Menu
+
+            <span id="hamburguer"></span>
+          </button>
+          <ul id="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produto">Produtos</a></li>
+            <li><a href="#servico">Serviços</a></li>
+            <li id="itemcontato"><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header> 
     <section class="fundo-verde" id="sobre">
       <div class="container flex-container ">
         <div class="col">
@@ -37,7 +41,7 @@
             dignissimos! Veniam a quisquam illo non dolores quos porro aliquid
             sequi?
           </p>
-          <p class="p1">
+          <p >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum
             expedita molestias repellendus. Officiis illum repudiandae
             aspernatur vero sed magnam quam atque cumque? Eum repudiandae iste
@@ -46,7 +50,7 @@
         </div>
 
         <div class="col">
-          <img src="img/img-sobre.jpg" alt="Cachorros em um cesto" />
+          <img class="img1" src="img/img-sobre.jpg" alt="Cachorros em um cesto" />
         </div>
       </div>
     </section>
@@ -66,7 +70,7 @@
             <img src="img/produto-1.jpg" alt="img produto-1" />
           </figure>
           
-          <h3>Produto 1</h3>
+          <h3>Previn shapoo</h3>
           <p>R$ 150,00</p>
           <a href="#" class="btn-pata">
             <img src="img/patinha-preta.png" alt="patinha-preta" />
@@ -79,7 +83,7 @@
           <figure>
             <img src="img/produto-2.jpg" alt="img produto-2" />
           </figure>
-          <h3>Produto 2</h3>
+          <h3>Casa Pet - media</h3>
           <p>R$ 380,00</p>
           <a href="#" class="btn-pata">
             <img src="img/patinha-preta.png" alt="patinha-preta" />
@@ -91,7 +95,7 @@
           <figure>
             <img src="img/produto-3.jpg" alt="img produto-3" />
           </figure>
-          <h3>Produto 3</h3>
+          <h3>Pote para ração</h3>
           <p>R$ 70,00</p>
           <a href="#" class="btn-pata" onclick="comprar()">
             <img src="img/patinha-preta.png" alt="patinha-preta" />
@@ -171,7 +175,7 @@
                 <br>
                 
                 <div>
-                    <button type="submit" value="enviar" onclick="enviar()">Enviar</button>
+                    <button class="btn-form" type="submit" value="enviar" onclick="enviar()">Enviar</button>
                 </div>
             </form>
         </div>
@@ -186,7 +190,7 @@
         </div>
     </footer> 
     <script type="text/javascript" src="js/script.js">
-       
+      
     </script>
 </body>
 </html>
